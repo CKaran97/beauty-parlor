@@ -1,8 +1,8 @@
 export const SHOP_CONFIG = {
-  name: "Glamour Beauty Parlor",
+  name: "I Queen Makeup Academy",
   tagline: "Where Beauty Meets Elegance",
   description: "Experience premium beauty services crafted with love and expertise. Your transformation journey starts here.",
-  phone: "919876543210", // WhatsApp number with country code (no + sign)
+  phone: "919325992925", // WhatsApp number with country code (no + sign)
   email: "hello@glamourbeauty.com",
   address: "123, MG Road, Near City Mall, Mumbai - 400001",
   timings: "Mon - Sat: 10:00 AM - 8:00 PM",
