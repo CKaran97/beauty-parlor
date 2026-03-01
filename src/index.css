@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #b8860b;
+  --color-primary-light: #d4a843;
+  --color-primary-dark: #8b6508;
+  --color-secondary: #1a1a2e;
+  --color-accent: #f5e6d3;
+  --color-rose: #e8b4b8;
+  --color-rose-light: #f2d5d8;
+  --color-gold: #d4af37;
+  --color-gold-light: #f0d78c;
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Poppins', sans-serif;
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: #fefefe;
+    color: #333;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+@layer components {
+  .section-padding {
+    padding: 5rem 1.5rem;
+  }
+
+  .gradient-bg {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .gold-gradient-text {
+    background: linear-gradient(135deg, #d4af37, #f0d78c, #d4af37);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .shimmer {
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(212, 175, 55, 0.3) 50%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+  }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 5px rgba(37, 211, 102, 0.5); }
+  50% { box-shadow: 0 0 20px rgba(37, 211, 102, 0.8), 0 0 40px rgba(37, 211, 102, 0.4); }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-dark);
+}
