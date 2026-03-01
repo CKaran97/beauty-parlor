@@ -13,7 +13,7 @@ export const SHOP_CONFIG = {
   },
   googleMapsEmbed:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.0!2d72.8!3d19.07!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDA0JzEyLjAiTiA3MsKwNDgnMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890",
-  googleScriptURL: "YOUR_GOOGLE_APPS_SCRIPT_URL_HERE",
+  googleScriptURL: "https://script.google.com/macros/s/AKfycbx5lLnVcR6l_oVJGRxQlPcX_Ns6b-ph2rl1uFSMUkmTsOgubpZzi3fntdGbER0jwqHM/exec",
   galleryScriptURL: "YOUR_GALLERY_APPS_SCRIPT_URL_HERE",
   social: {
     instagram: "https://instagram.com/glamourbeauty",
